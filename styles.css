@@ -8,31 +8,63 @@ body {
   text-align: center;
 }
 
+.footer {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #f1f1f1;
+  color: white;
+  text-align: center;
+  padding: 10px 16px; /* Adjusted padding values */
+  /* Remove position: fixed; */
+}
+
 /* Style the header */
 .header {
   padding: 10px 16px;
-  background: #4169e1;
-  color: #f1f1f1;
+  background: white;
+  color: black; /* Adjusted text color */
+  font-size: larger;
+  transition: background-color 0.3s ease; /* Add transition for smooth color change */
 }
 
-/* page content */
-.content {
-  padding: 16px;
-}
-
-/* The fiexed class is added to the header with JS when it reaches its scroll position */
+/* The fixed class is added to the header with JS when it reaches its scroll position */
 .header.fixed {
+  background: black;
+  color: white; /* Adjusted text color */
   position: fixed;
   top: 0;
   width: 100%;
+  transition: background-color 0.3s ease; /* Add transition for smooth color change */
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.header + .content {
-  padding-top: 51px;
+/* Page content */
+.content {
+  padding: 16px;
+  max-width: 600px;
+  margin-bottom: 50px;
 }
 
+/* Center-align the links */
 .links {
   text-align: center;
-  color: white;
+}
+
+/* Style the links and adjust text color */
+.links a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease; /* Add transition for smooth color change */
+}
+
+/* Style the links when fixed */
+.links.fixed a {
+  color: white; /* Adjusted text color */
+}
+
+p {
+  font-size: 16px;
+  line-height: 26px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
