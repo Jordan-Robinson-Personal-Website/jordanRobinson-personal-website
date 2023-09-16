@@ -1,3 +1,4 @@
+/* Reset some default browser styles */
 body {
   margin: 0;
   color: white;
@@ -24,7 +25,7 @@ body {
 /* Style the header */
 .header {
   padding: 10px 16px;
-  background: white;
+  background: transparent;
   color: black; /* Adjusted text color */
   font-size: 14px;
   transition: background-color 0.3s ease; /* Add transition for smooth color change */
@@ -42,7 +43,7 @@ body {
 
 /* Page content */
 .content {
-  padding: 16px;
+  padding: 30px;
   margin-bottom: 50px;
   text-align: center;
   background-color: black;
@@ -111,7 +112,7 @@ p {
 .secondary {
   background-color: white;
   color: black;
-  padding: 16px;
+  padding: 15px;
   margin-bottom: 50px;
   font-family: sans-serif;
   text-align: center;
@@ -124,6 +125,53 @@ p {
   margin: 20px;
 }
 
+.secondary .portfolio {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 50px;
+  margin: 20px;
+  flex: left;
+}
+.secondary-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  color: black;
+  padding: 15px;
+  margin-bottom: 50px;
+  font-family: sans-serif;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.secondary-flex-container .goals {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 50px;
+  margin: 20px;
+}
+
+.tertiary {
+  background-color: black;
+  color: white;
+  padding: 30px;
+  margin-bottom: 50px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.tertiary .customer {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 50px;
+  margin: 20px;
+}
+
+.tertiary .quote {
+  text-align: center;
+  color: grey;
+}
+
 .social-icons a {
   color: red;
   font-size: 24px;
@@ -132,5 +180,5 @@ p {
 }
 
 .social-icons a:hover {
-  color: #0077B5; /* Change color on hover (LinkedIn) */
+  color: #0077b5; /* Change color on hover (LinkedIn) */
 }
