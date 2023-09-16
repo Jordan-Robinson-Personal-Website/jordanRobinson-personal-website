@@ -1,18 +1,21 @@
 body {
   margin: 0;
+  color: white;
 }
 
 .top-container {
-  background-color: #f1f1f1;
+  background-color: hsl(0, 0%, 95%);
   padding: 30px;
   text-align: center;
+  color: black;
+  font-family: sans-serif;
 }
 
 .footer {
   box-sizing: border-box;
   width: 100%;
   background-color: #f1f1f1;
-  color: white;
+  color: black;
   text-align: center;
   padding: 10px 16px; /* Adjusted padding values */
   /* Remove position: fixed; */
@@ -23,7 +26,7 @@ body {
   padding: 10px 16px;
   background: white;
   color: black; /* Adjusted text color */
-  font-size: larger;
+  font-size: 14px;
   transition: background-color 0.3s ease; /* Add transition for smooth color change */
 }
 
@@ -40,8 +43,18 @@ body {
 /* Page content */
 .content {
   padding: 16px;
-  max-width: 600px;
   margin-bottom: 50px;
+  text-align: center;
+  background-color: black;
+}
+
+.content .info a {
+  text-decoration: none;
+  color: #2997ff;
+}
+
+.content .info a:hover {
+  text-decoration: underline;
 }
 
 /* Center-align the links */
@@ -49,10 +62,15 @@ body {
   text-align: center;
 }
 
+.links a:hover {
+  text-decoration: underline;
+}
+
 /* Style the links and adjust text color */
 .links a {
   text-decoration: none;
   color: black;
+  padding-left: 16px;
   transition: color 0.3s ease; /* Add transition for smooth color change */
 }
 
@@ -67,4 +85,52 @@ p {
   word-wrap: break-word;
   overflow-wrap: break-word;
   hyphens: auto;
+}
+
+.content .welcome {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 50px;
+  margin: 20px;
+}
+
+.content .myname {
+  color: red;
+}
+
+.content .quote {
+  text-align: center;
+  color: grey;
+}
+
+.secondary .quote {
+  text-align: center;
+  color: grey;
+}
+
+.secondary {
+  background-color: white;
+  color: black;
+  padding: 16px;
+  margin-bottom: 50px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.secondary .goals {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 50px;
+  margin: 20px;
+}
+
+.social-icons a {
+  color: red;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #0077B5; /* Change color on hover (LinkedIn) */
 }
