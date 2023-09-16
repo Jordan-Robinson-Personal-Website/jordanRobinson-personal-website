@@ -44,7 +44,6 @@ body {
 /* Page content */
 .content {
   padding: 30px;
-  margin-bottom: 50px;
   text-align: center;
   background-color: black;
 }
@@ -110,7 +109,7 @@ p {
 }
 
 .secondary {
-  background-color: white;
+  background-color: hsl(0, 0%, 95%);
   color: black;
   padding: 15px;
   margin-bottom: 50px;
